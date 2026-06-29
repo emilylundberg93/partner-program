@@ -51,21 +51,25 @@
   .pill.tech{background:#D7EEE6;color:#2E6655}
   .pill.chan{background:#EDEAE2;color:#5A564B}
   .pill.pe{background:var(--slate);color:var(--cream)}
+  .pill.oem{background:#CDE7DD;color:#1E5446}
 
   /* type cards */
   .card{background:var(--bone);border-radius:6px;padding:40px 44px;margin-top:24px;border-top:4px solid var(--signal)}
   .card.tech{border-top-color:var(--found)}
   .card.chan{border-top-color:var(--slate)}
   .card.pe{border-top-color:#5C6B1E}
+  .card.oem{border-top-color:#1E5446}
   .card .label{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
   .card h3{margin:6px 0 4px;font-size:26px;font-weight:400;letter-spacing:-0.5px}
   .card .ex{font-family:var(--mono);font-size:12px;color:var(--found);margin-bottom:20px}
   .card.tech .ex{color:#2E6655}
   .card.pe .ex{color:#5C6B1E}
+  .card.oem .ex{color:#1E5446}
   .purpose{font-size:16px;color:#3A3A38;border-left:3px solid var(--signal);padding-left:18px;margin:4px 0 28px}
   .card.tech .purpose{border-left-color:var(--found)}
   .card.chan .purpose{border-left-color:var(--slate)}
   .card.pe .purpose{border-left-color:#5C6B1E}
+  .card.oem .purpose{border-left-color:#1E5446}
   .vgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
   .vgrid h4,.full h4{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
   ul{list-style:none} li{position:relative;padding-left:18px;margin-bottom:8px;font-size:14px;color:#2E2E2C}
@@ -73,6 +77,7 @@
   .card.tech li::before{background:var(--found)}
   .card.chan li::before{background:var(--slate)}
   .card.pe li::before{background:#5C6B1E}
+  .card.oem li::before{background:#1E5446}
   .full{margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
   .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
   .opt{background:var(--cream);border-radius:5px;padding:16px 18px}
@@ -126,7 +131,7 @@
 <div class="hero">
   <div class="wrap">
     <h1 style="margin-top:24px">The Found <span class="signal">Partner Program.</span></h1>
-    <p class="lead">A first framework to formalize how we partner across Data, Technology, Consulting / SIs, and Private Equity: each type, the value exchange, who fits, the commitment options, and how we score fit so every partner reinforces the <span class="signal">Intelligence Engine</span>.</p>
+    <p class="lead">A first framework to formalize how we partner across Data, Technology, Consulting / SIs, Private Equity, and Embedded / OEM: each type, the value exchange, who fits, the commitment options, and how we score fit so every partner reinforces the <span class="signal">Intelligence Engine</span>.</p>
     <div class="meta">
       <span>Found.ai · Confidential</span>
       <span>Draft v0.1 · Jun 2026</span>
@@ -139,7 +144,7 @@
 <section><div class="wrap">
   <div class="sectionhead"><span class="num">FOR THIS SESSION</span><h2>What we want to land today.</h2></div>
   <div class="goals">
-    <div class="goal"><div class="gn">01</div><h4>Align on partner types</h4><p>Agree the four types: Data, Technology, Consulting / SIs, Private Equity.</p></div>
+    <div class="goal"><div class="gn">01</div><h4>Align on partner types</h4><p>Agree the five types: Data, Technology, Consulting / SIs, Private Equity, Embedded / OEM.</p></div>
     <div class="goal"><div class="gn">02</div><h4>Agree the value exchange</h4><p>What we provide each partner, and what we get back.</p></div>
     <div class="goal"><div class="gn">03</div><h4>Confirm ideal best fits</h4><p>The named targets worth pursuing in each type.</p></div>
     <div class="goal"><div class="gn">04</div><h4>Assign ownership</h4><p>Who owns the relationship at our high-priority targets.</p></div>
@@ -157,7 +162,7 @@
 
 <!-- 02 AT A GLANCE -->
 <section><div class="wrap">
-  <div class="sectionhead"><span class="num">SECTION 02</span><h2>Four partner types at a glance.</h2></div>
+  <div class="sectionhead"><span class="num">SECTION 02</span><h2>Five partner types at a glance.</h2></div>
   <table>
     <tr>
       <th>Type</th><th>One-line purpose</th><th>What Found gains</th><th>Live examples</th>
@@ -186,6 +191,12 @@
       <td>Sponsored, board-level intros to multiple portcos; a repeatable, high-leverage motion.</td>
       <td>Summit, Trivest, Svoboda Capital</td>
     </tr>
+    <tr>
+      <td><span class="pill oem">Embedded / OEM</span></td>
+      <td>Workflow-specific point solutions embed Found as the memory / intelligence substrate beneath their product, "Intelligence Engine inside."</td>
+      <td>Distribution into their user base; structured data from every embedded workflow compounding the graph.</td>
+      <td>Harvey <span style="color:var(--muted)">(legal)</span>, Augment <span style="color:var(--muted)">(logistics)</span>, V7 Go <span style="color:var(--muted)">(insurance / fin svcs)</span></td>
+    </tr>
   </table>
   <p class="note">Partner type × stage is a matrix, not a sequence, a single firm can be a Consulting / SI partner and an investor (e.g. Aberdeen), or a data and tech partner at once.</p>
 </div></section>
@@ -198,7 +209,8 @@
     <div class="label">Type 01</div>
     <h3>Data partners.</h3>
     <div class="ex">TOP FIT TODAY · ESRI (GEOSPATIAL)</div>
-    <p class="purpose"><strong>Purpose.</strong> Enrich the graph with 3rd-party datasets historically too expensive for mid-market to license or implement, embedded once into the Intelligence Engine and surfaced across every client deployment.</p>
+    <p class="purpose"><strong>Purpose.</strong> Enrich the graph with 3rd-party datasets historically too expensive for mid-market to license or implement, embedded once into the Intelligence Engine and surfaced across every client deployment. Spatial is the wedge, a physical-world layer; financial, identity, and regulatory data extend the same pattern into the digital dimension.</p>
+    <p class="note" style="margin-top:0;margin-bottom:24px">Esri / ArcGIS, in flight: ingest publicly available <strong>story maps</strong> and public spatial layers, encode with an ontology, and stand up a spatially-aware graph an AI can reason over (~1–2 months to build and validate). Logistics is the anchor use case (Ozinga, Echo, Dorian); insurance is the first replication test. The multi-tool unlock is fusing outputs from several ArcGIS tools and letting the graph make the decision. Ingesting story maps up front keeps the ontology in Found's graph, not in live ArcGIS calls, which mitigates dependency risk. Still informal: next step is concrete case studies and workflow examples from Jay.</p>
     <div class="vgrid">
       <div>
         <h4>Value we provide them</h4>
@@ -220,10 +232,11 @@
     <div class="full">
       <h4>Best fits</h4>
       <ul style="columns:2;column-gap:40px">
-        <li>Spatial / geospatial: Esri, Mapbox, Maxar</li>
-        <li>Firmographic &amp; risk (insurance/underwriting): Verisk, LexisNexis Risk, Moody's RMS</li>
-        <li>Commodity, pricing &amp; market data: S&amp;P Global, Argus Media, ICE Data</li>
-        <li>Regulatory, compliance &amp; legal: Thomson Reuters, LexisNexis, Bloomberg Law</li>
+        <li><strong>Spatial / geospatial (anchor):</strong> Esri / ArcGIS, story maps + public layers; Mapbox, Maxar, HERE</li>
+        <li><strong>Logistics / distribution:</strong> traffic &amp; telematics (HERE, INRIX), freight rates &amp; capacity (DAT, FreightWaves SONAR), RFID / sensor fusion</li>
+        <li><strong>Insurance, underwriting &amp; risk:</strong> Verisk, CoreLogic, Moody's RMS, LexisNexis Risk</li>
+        <li><strong>Financial services:</strong> firmographics &amp; entity (D&amp;B, S&amp;P Global), transaction / vendor-spend (Plaid), market &amp; pricing (ICE, Bloomberg)</li>
+        <li><strong>Cross-industry:</strong> identity / entity resolution (LexisNexis, Moody's Orbis)</li>
       </ul>
       <h4 style="margin-top:24px">Commitment &amp; payment options</h4>
       <div class="opts">
@@ -357,6 +370,47 @@
       </div>
     </div>
   </div>
+
+  <!-- EMBEDDED / OEM -->
+  <div class="card oem">
+    <div class="label">Type 05</div>
+    <h3>Embedded / OEM (ISV) partners.</h3>
+    <div class="ex">"INTELLIGENCE ENGINE INSIDE" · WORKFLOW-SPECIFIC POINT SOLUTIONS</div>
+    <p class="purpose"><strong>Purpose.</strong> Workflow-specific point solutions, the AI-native apps that own a single high-value workflow in a vertical, embed Found as the memory / intelligence substrate beneath their product, the <strong>"Intelligence Engine inside."</strong> Found is the thing being consumed, infrastructure others build on, not a service we deliver. This is the <strong>inverse of Technology partners</strong>: there Found consumes the partner's infrastructure; here the partner consumes Found.</p>
+    <div class="vgrid">
+      <div>
+        <h4>Value we provide them</h4>
+        <ul>
+          <li>A memory / graph / retrieval substrate they don't have to build, under their own UI</li>
+          <li>A fast path to AI-native features without standing up their own data layer</li>
+          <li>A differentiated, defensible product their competitors can't cheaply match</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Value they provide us</h4>
+        <ul>
+          <li>Distribution into their installed base, every embedded app is a new consumption channel</li>
+          <li>Compounding structured data: each deployment feeds more signal into the graph</li>
+          <li>The purest expression of the thesis, Found as infrastructure that scales without services drag</li>
+        </ul>
+      </div>
+    </div>
+    <div class="full">
+      <h4>Best fits</h4>
+      <ul style="columns:2;column-gap:40px">
+        <li><strong>Legal:</strong> Harvey, AI workflow for contracts, research, and matter work</li>
+        <li><strong>Logistics:</strong> Augment, AI agent for freight and supply-chain workflows</li>
+        <li><strong>Insurance / financial services:</strong> V7 Go, document-to-decision AI for underwriting and diligence</li>
+        <li><strong>Selection bar:</strong> owns a high-value workflow, AI-native roadmap, and data that deepens the graph</li>
+      </ul>
+      <h4 style="margin-top:24px">Commitment &amp; payment options</h4>
+      <div class="opts">
+        <div class="opt"><div class="ot">Embedded OEM license</div><div class="od">Usage / seat royalty on Found consumed under the partner's product.</div></div>
+        <div class="opt"><div class="ot">Platform fee + rev-share</div><div class="od">Base platform fee plus a share of the AI-feature revenue they unlock.</div></div>
+        <div class="opt"><div class="ot">Co-build / design partner</div><div class="od">Discounted embed for reference, roadmap input, and graph data rights.</div></div>
+      </div>
+    </div>
+  </div>
 </div></section>
 
 <!-- 04 SCORING -->
@@ -376,13 +430,13 @@
   <h4 style="font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:32px 0 0">Weighting by type</h4>
   <p style="max-width:760px;margin-top:10px">How much each criterion counts toward a given type's score. The same 1–5 ratings are multiplied by these weights, so a <strong>Highest</strong> criterion moves the score three times as much as a <strong>Low</strong> one. This is what makes the framework behave differently per type without changing the criteria.</p>
   <table style="margin-top:16px">
-    <tr><th>Criterion</th><th>Data</th><th>Technology</th><th>Consulting / SIs</th><th>Private Equity</th></tr>
-    <tr><td>Strategic alignment</td><td>High</td><td>High</td><td>Highest</td><td>High</td></tr>
-    <tr><td>Mutual value</td><td>High</td><td>High</td><td>Highest</td><td>High</td></tr>
-    <tr><td>ICP overlap</td><td>Med</td><td>Low</td><td>Highest</td><td>Highest</td></tr>
-    <tr><td>Graph contribution</td><td>Highest</td><td>High</td><td>Low</td><td>Low</td></tr>
-    <tr><td>Effort vs. return</td><td>Med</td><td>Med</td><td>High</td><td>High</td></tr>
-    <tr><td>Durability / defensibility</td><td>High</td><td>Highest</td><td>Med</td><td>Med</td></tr>
+    <tr><th>Criterion</th><th>Data</th><th>Technology</th><th>Consulting / SIs</th><th>Private Equity</th><th>Embedded / OEM</th></tr>
+    <tr><td>Strategic alignment</td><td>High</td><td>High</td><td>Highest</td><td>High</td><td>Highest</td></tr>
+    <tr><td>Mutual value</td><td>High</td><td>High</td><td>Highest</td><td>High</td><td>High</td></tr>
+    <tr><td>ICP overlap</td><td>Med</td><td>Low</td><td>Highest</td><td>Highest</td><td>Med</td></tr>
+    <tr><td>Graph contribution</td><td>Highest</td><td>High</td><td>Low</td><td>Low</td><td>Highest</td></tr>
+    <tr><td>Effort vs. return</td><td>Med</td><td>Med</td><td>High</td><td>High</td><td>Med</td></tr>
+    <tr><td>Durability / defensibility</td><td>High</td><td>Highest</td><td>Med</td><td>Med</td><td>Highest</td></tr>
   </table>
   <div class="opts" style="grid-template-columns:repeat(4,1fr);margin-top:16px">
     <div class="opt"><div class="ot">Highest · ×3</div><div class="od">Make-or-break for this type. A weak score here should sink the partner on its own.</div></div>
@@ -448,6 +502,7 @@
     <tr><td>SurrealDB</td><td><span class="pill tech">Technology</span></td><td>Active partner</td><td>TBD</td></tr>
     <tr><td>Databricks</td><td><span class="pill tech">Technology</span></td><td>Prospect</td><td>TBD</td></tr>
     <tr><td>Summit / Trivest / Svoboda</td><td><span class="pill pe">Private Equity</span></td><td>Prospect</td><td>TBD</td></tr>
+    <tr><td>Harvey / Augment / V7 Go</td><td><span class="pill oem">Embedded / OEM</span></td><td>To source</td><td>TBD</td></tr>
   </table>
   <p class="note">Sources: Granola meeting notes (partner program, Aberdeen, Esri, SurrealDB, Ozinga); Slack #gtm / #gtm-et (Evan on formalizing channel partners + case studies; partner-type matrix); vault, company/domains/thesis.md (Intelligence Engine / infrastructure positioning), company/captured/inbox/kevin/2026-05-investor-update.md (Aberdeen channel detail).</p>
 </div></section>
